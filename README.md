@@ -30,15 +30,24 @@ Web Editor: Fix bugs or tweak logic right from the browser—no SSH required for
 
 🛠️ Setting it up
 
-1.  Grab the code
+1. Install UV for fast python 
+`wget -qO- https://astral.sh/uv/install.sh | sh`
+
+2. Use UV to install Python
+`uv  python  install`
+
+3. Make sure python is installed
+`python3.13`
+
+4.  Grab the code
 
 `cd /home/npi git clone  [git@github.com](mailto:git@github.com):Ngbcoder/Arudino-Terminal.git uno cd uno`
 
-2.  Install the essentials
+5.  Install the essentials
 
-`pip install flask pyserial pytz python-dotenv requests docker`
+`uv add flask pyserial pytz python-dotenv requests docker`
 
-3.  Configure your environment
+6.  Configure your environment
 
 Create a .env file in the root directory. This is where the magic (and your API keys) lives:
 
@@ -50,7 +59,7 @@ LOCATION=City,State
 TOMORROW_API_KEY=your_api_key 
 GOODREADS_RSS=your_rss_url THEME=midnight`
 
-4.  Make it a Service
+7.  Make it a Service
 
 To make sure Zeus starts up whenever your Pi boots:
 
