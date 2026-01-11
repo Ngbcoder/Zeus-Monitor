@@ -6,6 +6,13 @@ A modular, high-visibility system monitor for Raspberry Pi. Zeus bridges the gap
 
 I built this because I wanted a way to see my notifications, weather, and server status without having to open a browser tab or check my phone. With the new plugin system, you can pull in just about any data you care about.
 
+# ⌨️ Hardware
+1 Raspberry PI (I use the model 3 but any should do)
+1 Arduino uno (For driving the display)
+1 I2C Display 16X2 recommend)
+
+
+
 ##  ✨ What it does
 
 Hybrid Dashboard: View stats on a physical I2C LCD or through a sleek, responsive web UI.
