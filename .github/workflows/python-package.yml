@@ -17,9 +17,11 @@ jobs:
       fail-fast: false
       matrix:
         python-version: ["3.9", "3.10", "3.11"]
-
-    steps:
+steps:
     - uses: actions/checkout@v4
+      with:
+        submodules: recursive  # <--- Add these two lines
+        
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
