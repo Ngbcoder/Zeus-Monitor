@@ -10,6 +10,9 @@ I built this because I wanted a way to see my notifications, weather, and server
 1 Raspberry PI (I use the model 3 but any should do)
 1 Arduino uno (For driving the display)
 1 I2C Display 16X2 recommend)
+# Case
+I made a 3dprintable case
+https://www.thingiverse.com/thing:7276552/files
 
 
 
