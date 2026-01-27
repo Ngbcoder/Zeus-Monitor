@@ -1,0 +1,18 @@
+[Unit]
+Description=Zeus LCD Monitor and Web Interface
+After=network.target
+
+[Service]
+# Run as your specific user so it can access your home directory files
+User=npi
+Group=npi
+WorkingDirectory=/home/npi/uno
+# Point to your python executable and the script
+ExecStart=/usr/bin/python3 /home/npi/uno/main.py
+Restart=always
+RestartSec=5
+# Ensures logs show up immediately
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
