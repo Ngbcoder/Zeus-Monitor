@@ -10,3 +10,4 @@ uv.lock
 .python-version
 # Virtual environments
 .venv
+/.vs
