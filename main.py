@@ -128,7 +128,7 @@ def lcd_worker():
                     ser.write((f"Mail: {unread}".ljust(16) + "|" + f"Kuma: {kuma}".ljust(16) + "\n").encode())
                     time.sleep(5)
                     # Screen 3 (Weather)
-                    ser.write((f"Maine: {temp}".ljust(16) + "|" + f"{cond}".ljust(16) + "\n").encode())
+                    ser.write((f"Home: {temp}".ljust(16) + "|" + f"{cond}".ljust(16) + "\n").encode())
                     time.sleep(5)
         except: time.sleep(5)
 
